@@ -1,9 +1,10 @@
-import { actionTypes } from "./actionTypes";
+// import { actionTypes } from "./actionTypes";
 
 export const incrementNumber = (num) =>{
     return{
         type:"INCREMENT",
         payload:num
+        // payload:num
     }
 
 }
@@ -12,6 +13,7 @@ export const decrementNumber=(num)=>{
 
  return{
     type:"DECREMENT",
+    payload:num
  }
 
 }
