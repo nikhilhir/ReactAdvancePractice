@@ -1,5 +1,5 @@
 import React from 'react'
-import Todoinput from './todoinput'
+import Todoinput from './Todoinput'
 
 const Todo = () => {
 
