@@ -1,4 +1,7 @@
 export const Add_COUNT="Add_COUNT"
 export const SUBSTRACT_COUNT="SUBSTRACT_COUNT"
 
+export const GET_TODO_REQUEST = "GET_TODO_REQUEST";
+export const GET_TODO_SUCCESS = "GET_TOTO_SUCCESS";
+export const GET_TODO_FAILURE = "GET_TODO_FAILURE";
 
