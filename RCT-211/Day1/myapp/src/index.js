@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Store } from './Redux/store';
+
+console.log(Store)
+console.log(Store.getState())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
