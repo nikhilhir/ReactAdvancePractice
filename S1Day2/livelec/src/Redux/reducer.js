@@ -25,14 +25,16 @@ const initialState = {
                 ...state,
                 isloading:false,
                 isError:false,
-                todos:[...state.todos, ...payload]
+                todos:[...state.todos,...payload]
             }  
         case types.GET_TODO_FAILURE:
             return{
                 ...state,
                 isloading:false,
                 isError:true
-            }      
+            }  
+        default:
+            return state;      
     }
 }
 
