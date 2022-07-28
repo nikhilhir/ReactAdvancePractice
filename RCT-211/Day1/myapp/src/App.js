@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { handleDecrement, handleIncrement } from "./Redux/action";
 import { Store } from "./Redux/store";
 
 function App() {
@@ -13,16 +14,16 @@ function App() {
     setlocal((prev)=>prev+1)
   })
 
-  const handleIncrement = () => {
-    dispatch({ type: "INCREMENT", payload: 1 });
-    console.log( Store.getState())
-  };
+  // const handleIncrement = () => {
+  //   dispatch({ type: "INCREMENT", payload: 1 });
+  //   console.log( Store.getState())
+  // };
 
-  const handleDecrement = () => {
-    dispatch({ type: "DECREMENT", payload: 1 });
-    console.log( Store.getState())
-  };
-
+  // const handleDecrement = () => {
+  //   dispatch({ type: "DECREMENT", payload: 1 });
+  //   console.log( Store.getState())
+  // };
+//BY USING USESTATE
   // const [counter, setcounter] = useState(0)
 
   // const handleIncrement =()=>{
@@ -38,8 +39,8 @@ function App() {
   return (
     <div className="App">
       <h1> "Counter",{ counter}</h1>
-      <button onClick={handleIncrement}>INC+</button>
-      <button onClick={handleDecrement}>DEC-</button>
+      <button onClick={()=>dispatch(handleIncrement())}>INC+</button>
+      <button onClick={()=>dispatch(handleDecrement())}>DEC-</button>
     </div>
   );
 }
