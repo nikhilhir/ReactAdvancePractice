@@ -12,8 +12,9 @@ console.log(Store.getState())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
+  <Provider Store={Store}>
     <App />
+    </Provider>
 
 );
 

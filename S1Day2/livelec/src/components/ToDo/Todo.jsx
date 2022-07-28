@@ -9,9 +9,11 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
 const Todo = () => {
-  const todos = useSelector((store) => store.todos);
   const dispatch = useDispatch();
-  
+  const todos = useSelector((store) => store.todos);
+console.log(todos)
+
+
   const addtodo=(payload)=>{
 
   }
@@ -27,10 +29,10 @@ const Todo = () => {
       .then((res) => {
         const successAction = getTodoSuccess(res.data);
         dispatch(successAction);
-        console.log(successAction);
+        //console.log(successAction);
       })
       .catch((err) => {
-        const errorAction = getTodoFailure(err);
+        const errorAction = getTodoFailure();
         dispatch(errorAction);
       });
   };
