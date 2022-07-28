@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Store } from './Redux/store';
 
+
+
 console.log(Store)
 console.log(Store.getState())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
     <App />
-  </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

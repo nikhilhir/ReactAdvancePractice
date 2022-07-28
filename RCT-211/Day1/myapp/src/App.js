@@ -7,6 +7,8 @@ function App() {
   const { counter } = Store.getState();
   const [local,setlocal]=useState(0)
 
+  console.log(counter)
+
   Store.subscribe(()=>{
     setlocal((prev)=>prev+1)
   })
@@ -18,6 +20,7 @@ function App() {
 
   const handleDecrement = () => {
     dispatch({ type: "DECREMENT", payload: 1 });
+    console.log( Store.getState())
   };
 
   // const [counter, setcounter] = useState(0)
@@ -34,7 +37,7 @@ function App() {
   // }
   return (
     <div className="App">
-      <h1>{counter}</h1>
+      <h1> "Counter",{ counter}</h1>
       <button onClick={handleIncrement}>INC+</button>
       <button onClick={handleDecrement}>DEC-</button>
     </div>
