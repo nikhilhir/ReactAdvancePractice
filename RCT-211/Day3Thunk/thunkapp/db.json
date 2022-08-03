@@ -11,29 +11,19 @@
       "id": 2
     },
     {
-      "title": "now  working",
+      "title": "task1",
       "status": false,
       "id": 3
     },
     {
-      "title": "extract from action",
+      "title": "new task",
       "status": false,
       "id": 4
     },
     {
-      "title": "yes",
+      "title": "task w",
       "status": false,
       "id": 5
-    },
-    {
-      "title": "it is done",
-      "status": false,
-      "id": 6
-    },
-    {
-      "title": "work",
-      "status": false,
-      "id": 7
     }
   ]
 }
