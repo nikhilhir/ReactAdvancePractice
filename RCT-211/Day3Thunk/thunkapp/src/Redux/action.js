@@ -28,10 +28,10 @@ const addTodoRequest = () => {
     type: types.ADD_TODO_REQUEST,
   };
 };
-const addTotoSuccess = () => {
+const addTotoSuccess = (payload) => {
   return {
     type: types.ADD_TODO_SUCCESS,
-    
+    payload
   };
 };
 const addTodoFailure = (errormessage) => {
