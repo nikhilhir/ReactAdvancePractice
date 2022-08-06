@@ -4,7 +4,7 @@ const Homepage = () => {
   return (
     <div>
       <table>
-        <thead style={{ fontWeight: "700" }}>
+        <thead style={{ fontWeight: "700"}}>
           <tr>
             <th>ID</th>
             <th>Image</th>
