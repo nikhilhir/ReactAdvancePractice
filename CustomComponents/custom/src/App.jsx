@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import PinBox from './Components/PinBox'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div className="App">
      <h1>Custom Components</h1>
+     <PinBox/>
     </div>
   )
 }
