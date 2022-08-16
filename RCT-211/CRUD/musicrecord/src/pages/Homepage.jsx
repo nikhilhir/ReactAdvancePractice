@@ -1,7 +1,8 @@
 import React from 'react'
+import styled from "styled-component";
 import FilterSort from '../components/FilterSort'
 import MusicRecords from './MusicRecords'
-import styled from "styled-component"
+
 
 const Homepage = () => {
   return (

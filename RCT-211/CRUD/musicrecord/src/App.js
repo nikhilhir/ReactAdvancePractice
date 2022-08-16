@@ -1,12 +1,13 @@
 
 import './App.css';
-import Homepage from './pages/Homepage';
+
+import MainRoutes from './pages/MainRoutes';
 
 function App() {
   return (
     <div className="App">
      <h1>MUSIC RECORD</h1>
-     <Homepage/>
+    <MainRoutes/>
     </div>
   );
 }
