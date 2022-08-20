@@ -7,7 +7,7 @@ const logindata = (payload)=>(dispatch)=>{
     
     dispatch({type:types.LOGIN_REQUEST});
 
-    axios({
+    return axios({
         method:"POST",
         url:"/api/login",
         baseURL:"https://requres.in",

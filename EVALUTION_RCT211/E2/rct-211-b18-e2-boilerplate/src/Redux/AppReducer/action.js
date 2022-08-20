@@ -3,6 +3,8 @@
 import * as types from "./actionType";
 import axios from "axios";
 
+
+
 // const getwatchDataRequest=()=>{
 //     return{
 //         type:types.GET_PROFILE_DETAILS_REQUEST
@@ -15,9 +17,11 @@ import axios from "axios";
 //THIS IS NECESSARY WHEN YPU USE AXIOS FOR ANY REQUESR
 //REMEMBER RETURN AXIOS DISPATCH({TYPE:TYPES.})
 const getAppdata=(params)=>(dispatch)=>{
+
     dispatch({type:types.GET_WATCHES_DATA_REQUEST})
+
     axios
-      .get("http://localhost:8080/watches",params)
+      .get("/watches",params)
       .then((res) =>
         dispatch({ type: types.GET_WATCHES_DATA_SUCCESS, payload: res.data })
       )
