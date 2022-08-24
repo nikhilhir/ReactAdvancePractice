@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import { Image } from "./Components/Image";
 import { Input } from "./Components/Input";
@@ -14,6 +15,13 @@ function App() {
     minValue: 5,
     maxValue: 15,
   });
+
+  const [value,setValue]=useState;
+
+  const capturValue = (val)=>{
+    
+    setValue(val)
+  }
   return (
     <div className="App">
       {/* DO NOT CHANGE the 5 lines below   */}
@@ -26,9 +34,19 @@ function App() {
       <br />
       {/* You can pass the required props as mentioned in the questions to
       check if the components are working properly */}
-      <Image />
+      <Image 
+      src="https://via.placeholder.com/200" alt="image" width="200px"
+      borderRadius={20}
+      fit="cover"
+      />
       <br />
-      <Input />
+      <Input
+      type="text"
+      size="xl"
+      value={value}
+      varient="filled"
+      onChange={capturValue}
+       />
     </div>
   );
 }

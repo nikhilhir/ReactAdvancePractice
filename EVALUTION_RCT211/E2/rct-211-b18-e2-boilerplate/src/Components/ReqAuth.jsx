@@ -18,7 +18,7 @@ const ReqAuth = ({children}) => {
     if(!Authorize){
        return <Navigate to="/login" state={{from:location}} replace/>
        // state from means current usr location obj in state property pass current use location
-       //before going to login page  //ket form or currentuserlocstion
+       //before going to login page  //key form or currentuserlocstion
     }
     else{
         return children

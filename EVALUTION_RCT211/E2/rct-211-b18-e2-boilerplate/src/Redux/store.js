@@ -25,3 +25,6 @@ export { store };
 if (window.Cypress) {
   window.store = store;
 }
+
+
+// const store=legacy_createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)))

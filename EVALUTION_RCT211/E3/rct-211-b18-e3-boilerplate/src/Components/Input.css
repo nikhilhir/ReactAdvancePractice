@@ -1,0 +1,25 @@
+.sm{
+    font-size: 10px;
+}
+
+.md{
+    font-size: 14px;
+}
+
+.lg{
+    font-size: 18px;
+}
+
+.xl{
+    font-size: 24px;
+
+}
+
+.ouutline{
+    background:white
+}
+
+.filled{
+    border:1px solid red;
+    border-bottom: 1px solid gray;
+}
