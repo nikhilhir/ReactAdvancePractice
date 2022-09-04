@@ -1,0 +1,57 @@
+HTTP -> browser and the server
+
+client and server
+
+three way handshake
+
+client server mybrowser masaischool.com
+
+c --> s; expresses intent to connect // wave or call auto
+
+s --> c; acknowledges the intent // nods his head, slows down
+
+c --> s; I want so and so // i want to go to xyz
+
+//TCP AND UDP //transmission control protocol and user datagram protocol
+
+//HTTP operates over TCP
+
+//TCP - nothing will be lost, but there can be delay //UDP - loss is fine, but there should not be delay - mini militia
+
+//4GB - huge file on server and client needs it //4GB - can't be transferred instantly - bandwidth
+
+//4gb - breaks down into small small packets/chunks ---
+
+a, b, c --------------------------------> abc
+
+[ { id : 1, name : "masai", city : "Blore" } ]
+
+//http verbs/methods -
+
+// GET - to get the data from the server;
+
+POST - sending the data to the server;
+
+PUT - /2 - {city : "Blore"} - successful -
+
+PATCH - /2 - {name : "masaischool"} - successful
+
+DELETE - deleting the data on the server;
+
+headers - other information 1. content-type : application/json 2. xyz : abc
+
+https - http + s
+
+HTTP http 3 way handshake tcp vs udp http on tcp;
+
+nodemon
+
+creating server using http and listening on port
+
+4.GET / /about /contact /details - we read from file and sent it
+
+sync vs async
+
+POST
+
+write a file/append file - if file doesn't exist, it creates a file
