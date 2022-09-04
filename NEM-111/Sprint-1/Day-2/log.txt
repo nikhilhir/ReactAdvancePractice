@@ -1,0 +1,5 @@
+undefined /favicon.icoundefined /contactundefined /favicon.icoundefined /favicon.icoundefined /about
+undefined /favicon.ico
+GET /about
+GET /favicon.ico
+GET /favicon.ico
