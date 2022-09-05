@@ -3,3 +3,15 @@ undefined /favicon.ico
 GET /about
 GET /favicon.ico
 GET /favicon.ico
+GET /
+GET /favicon.ico
+GET /
+GET /favicon.ico
+GET /
+GET /favicon.ico
+GET /
+GET /favicon.ico
+GET /
+GET /favicon.ico
+GET /
+GET /favicon.ico
