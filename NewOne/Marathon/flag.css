@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+.main{
+  margin: auto;
+  text-align: center;
+}
+.orange{
+        width: 30px;
+        height: 15px;
+        background-color: orange;
+}
+
+.blue{
+    width: 15px;
+        height: 15px;
+        background-color: blue;
+        border-radius: 50%;
+        text-align: center;
+        
+}
+.green {
+        width: 30px;
+        height: 15px;
+        background-color: green;
+    }    
