@@ -1,0 +1,32 @@
+let mongoose = require('mongoose');
+
+const server = '127.0.0.1:27017'; // REPLACE WITH YOUR DB SERVER
+const database = 'fcc-Mail';      // REPLACE WITH YOUR DB NAME
+
+class Database {
+  constructor() {
+    this._connect()
+  }
+  
+_connect() {
+     mongoose.connect(`mongodb://${server}/${database}`)
+       .then(() => {
+         console.log('Database connection successful')
+       })
+       .catch(err => {
+         console.error('Database connection error')
+       })
+  }
+}
+
+module.exports = new Database()
+
+schema 
+a mongoose schema define the structure of the document ,
+default value validation etc
+
+model
+a mongoose model is wrapper on the mongoose schema
+a mongoose Schema defines the struvture of the ducument
+Provides an interface to the datebase for creating ,
+querying,updateing,deleting,record etc,
