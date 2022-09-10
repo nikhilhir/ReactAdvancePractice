@@ -1,3 +1,4 @@
+const { application } = require("express");
 const express = require("express");
 const App = express();
 
@@ -29,9 +30,13 @@ App.listen(5000, () => {
 
 App.use(express.json())
 
+App.set('view engine','ejs')
+
 //method + route , (callback, request and responce)
 App.get("/", (req, res) => {
-  res.send("WELCome to the home page");
+  //res.send("WELCome to the home page");
+  //res.status(500).json({messsage:"error"})
+  res.render("index")
 });
 
 App.get("/products", (req, res) => {
@@ -63,8 +68,6 @@ App.get("/profile/:name", (req, res) => {
   const {name} = req.params
   res.send("welcome"+name)
 });
-
-
 
 
 
