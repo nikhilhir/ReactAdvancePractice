@@ -20,10 +20,10 @@ app.get("/",(req,res)=>{
 app.use(authentication)
 
 app.use("/user", userControler);
-app.use("/notes",notesControler)
+app.use("/note",notesControler)
 
 
-app.listen(7000,async()=>{
+app.listen(9000,async()=>{
     try {
         await conneection
         console.log("db connected succesfully")
@@ -31,5 +31,5 @@ app.listen(7000,async()=>{
         console.log("err connected to db")
         console.log(error)
     }
-    console.log("server run on port http://localhost:7000")
+    console.log("server run on port http://localhost:9000")
 })

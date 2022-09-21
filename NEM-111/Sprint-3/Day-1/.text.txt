@@ -1,0 +1,17 @@
+
+
+post user/signup
+post user/login ---> lgin and get token
+
+//authenticate -->verify token
+
+CRUD
+
+CREATE => POST=> user/:userId/notes/CREATE
+READ => GET=>user/:userId/notes
+UPDATE=>PATCH=>user/:userId/notes/edit
+DELETE=>DELETE=>user/:userId/notes/delete
+const note=NotesModel.find({_id:notesId})
+npte.userId===userId? do the op : not autherised
+
+get uerID from params and check find({userId:useIDsame as  we get from params})
