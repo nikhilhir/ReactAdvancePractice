@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking Sound</title>
+    <style type="text/css">
+        *{
+            background-color: aqua;
+            
+        }
+        h1{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #btn{
+           
+            margin: auto;
+            align-items: center;
+            margin: 50px 100px 50px 300px;
+            border-radius: 35px;
+            background-color: blue;
+            color: red;
+            padding: 20px;
+           font-weight: 400;
+           width: 200px;
+           height: 70px;
+           font-size: 24px;
+            
+        }
+        #btn:active{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button Click</h1>
+    <button id="btn" onclick="audio.play();">Click Me</button>
+
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "./bipMp3"
+
+    </script>
+</body>
+</html>
