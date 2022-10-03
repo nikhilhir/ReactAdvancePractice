@@ -31,6 +31,21 @@
            font-size: 24px;
             
         }
+         #nxt{
+           
+            margin: auto;
+            align-items: center;
+            margin: 50px 100px 50px 300px;
+            border-radius: 35px;
+            background-color: yellow;
+            color:black;
+            padding: 20px;
+           font-weight: 400;
+           width: 200px;
+           height: 70px;
+           font-size: 24px;
+            
+        }
         #btn:active{
             font-size: 30px;
         }
@@ -40,9 +55,14 @@
     <h1>Button Click</h1>
     <button id="btn" onclick="audio.play();">Click Me</button>
 
+    <button id="nxt" onclick="audio2.play();">Click Me</button>
+
     <script type="text/javascript">
         const audio = new Audio();
         audio.src = "./bipMp3"
+
+        const audio2 = new Audio();
+        audio2.src="./waterbropMp3"
 
     </script>
 </body>
