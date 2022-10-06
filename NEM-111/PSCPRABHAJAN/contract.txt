@@ -1,0 +1,24 @@
+
+conrtact beyween cliend and server side
+
+client side need signup
+POST/SIGNUP 
+set username
+id, password,
+mobilename,abddress
+
+POST/LOGIN
+accept ==username,address
+return ==id , name of user,token
+
+
+POST/LOGOUT
+accept==token
+return ==success
+
+GET/profile
+return name,username,email,password,mobile,country,gender
+
+
+GET/profile/userid/feed
+return his feed
