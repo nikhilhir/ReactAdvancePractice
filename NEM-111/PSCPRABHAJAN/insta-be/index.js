@@ -14,9 +14,6 @@ const connection = require("./config/db")
 
 
 
-// app.get("/",(req,res)=>{
-// res.send("hello world start node")
-//  })
 
 app.use("/auth",authRouter)
 
@@ -29,5 +26,5 @@ app.use("/auth",authRouter)
    } catch (error) {
       console.log(error)
    }
-    console.log('server runningg on port http://localhost:5000')
+    console.log('server running on port http://localhost:5000')
  })
